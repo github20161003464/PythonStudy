@@ -1,0 +1,136 @@
+def main():
+
+    inpath = '/home/jj/Downloads/homework/dictionary/主题/题材内容.txt'
+    print '题材内容', "\n"
+    ree = '/home/jj/Downloads/homework/dictionary/主题/主题.txt'
+    print count(inpath, ree)
+
+    inpath = '/home/jj/Downloads/homework/dictionary/主题/风格.txt'
+    print '风格', "\n"
+    ree = '/home/jj/Downloads/homework/dictionary/主题/主题.txt'
+    print count(inpath, ree)
+
+    inpath = '/home/jj/Downloads/homework/dictionary/制作/出品公司.txt'
+    print '出品公司', "\n"
+    ree = '/home/jj/Downloads/homework/dictionary/制作/制作.txt'
+    print count(inpath, ree)
+
+    inpath = '/home/jj/Downloads/homework/dictionary/制作/导演.txt'
+    print '导演', "\n"
+    ree = '/home/jj/Downloads/homework/dictionary/制作/制作.txt'
+    print count(inpath, ree)
+
+    inpath = '/home/jj/Downloads/homework/dictionary/制作/编剧.txt'
+    print '编剧', "\n"
+    ree = '/home/jj/Downloads/homework/dictionary/制作/制作.txt'
+    print count(inpath, ree)
+
+    inpath = '/home/jj/Downloads/homework/dictionary/制作/选景.txt'
+    print '选景', "\n"
+    ree = '/home/jj/Downloads/homework/dictionary/制作/制作.txt'
+    print count(inpath, ree)
+
+    inpath = '/home/jj/Downloads/homework/dictionary/剧情/发展.txt'
+    print '发展', "\n"
+    ree = '/home/jj/Downloads/homework/dictionary/剧情/剧情.txt'
+    print count(inpath, ree)
+
+    inpath = '/home/jj/Downloads/homework/dictionary/剧情/开头.txt'
+    print '开头', "\n"
+    ree = '/home/jj/Downloads/homework/dictionary/剧情/剧情.txt'
+    print count(inpath, ree)
+
+    inpath = '/home/jj/Downloads/homework/dictionary/剧情/泪点.txt'
+    print '泪点', "\n"
+    ree = '/home/jj/Downloads/homework/dictionary/剧情/剧情.txt'
+    print count(inpath, ree)
+
+    inpath = '/home/jj/Downloads/homework/dictionary/剧情/笑点.txt'
+    print '笑点', "\n"
+    ree = '/home/jj/Downloads/homework/dictionary/剧情/剧情.txt'
+    print count(inpath, ree)
+
+    inpath = '/home/jj/Downloads/homework/dictionary/剧情/结局.txt'
+    print '结局', "\n"
+    ree = '/home/jj/Downloads/homework/dictionary/剧情/剧情.txt'
+    print count(inpath, ree)
+
+    inpath = '/home/jj/Downloads/homework/dictionary/视听/画面.txt'
+    print '画面', "\n"
+    ree = '/home/jj/Downloads/homework/dictionary/视听/视听.txt'
+    print count(inpath, ree)
+
+    inpath = '/home/jj/Downloads/homework/dictionary/视听/动作.txt'
+    print '动作', "\n"
+    ree = '/home/jj/Downloads/homework/dictionary/视听/视听.txt'
+    print count(inpath, ree)
+
+    inpath = '/home/jj/Downloads/homework/dictionary/视听/视听效果的其他.txt'
+    print '视听效果的其他', "\n"
+    ree = '/home/jj/Downloads/homework/dictionary/视听/视听.txt'
+    print count(inpath, ree)
+
+    inpath = '/home/jj/Downloads/homework/dictionary/视听/音乐.txt'
+    print '音乐', "\n"
+    ree = '/home/jj/Downloads/homework/dictionary/视听/视听.txt'
+    print count(inpath, ree)
+
+    inpath = '/home/jj/Downloads/homework/dictionary/角色/角色中的其他.txt'
+    print '角色中的其他', "\n"
+    ree = '/home/jj/Downloads/homework/dictionary/角色/角色.txt'
+    print count(inpath, ree)
+
+    inpath = '/home/jj/Downloads/homework/dictionary/角色/配角.txt'
+    print '配角', "\n"
+    ree = '/home/jj/Downloads/homework/dictionary/角色/角色.txt'
+    print count(inpath, ree)
+
+    inpath = '/home/jj/Downloads/homework/dictionary/角色/反派.txt'
+    print '反派', "\n"
+    ree = '/home/jj/Downloads/homework/dictionary/角色/角色.txt'
+    print count(inpath, ree)
+
+    inpath = '/home/jj/Downloads/homework/dictionary/角色/男角色.txt'
+    print '男主角', "\n"
+    ree = '/home/jj/Downloads/homework/dictionary/角色/角色.txt'
+    print count(inpath, ree)
+
+def count(inpath,ree):
+    uipath = unicode(inpath, "utf8")
+    infile = open('uipath', 'r')
+    uipath = unicode(ree, "utf8")
+    ree = open('uipath', 'r')
+    wordCounts = {}
+    for line in infile.readlines():
+        if len(line):
+            break
+        wordCounts[line] = 0
+        wordCounts[line] = ree.count(line)
+        pairs = list(wordCounts.items())
+        items = [[x, y] for (y, x) in pairs]
+        items.sort()
+    infile.close()
+    for i in range(len(items) - 1, len(items) - count - 1, -1):
+        print(items[i][1] + "\t" + str(items[i][0]))
+        data.append(items[i][0])
+        words.append(items[i][1])
+    return wordCounts
+
+def processLine(word, wordCounts):
+    if word in wordCounts:
+        wordCounts[word] += 1
+    else:
+        wordCounts[word] = 1
+
+def lujinqu(inpath):
+    t = list()
+    uipath = unicode(inpath, "utf8")
+    li = open('uipath', 'r')
+    inpath = '/home/jj/Downloads/homework/太空旅客.txt'
+    uipath = unicode(inpath, "utf8")
+    re = open('uipath', 'r')
+    for x in t:
+        print x, "\t", re.count(x)
+    cont = li.readline()
+    for x in li:
+        t.append(x)
